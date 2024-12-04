@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Patient Record Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Healthcare Patient Records</h1>
+    <div id="record-form">
+        <input type="text" id="patient-id" placeholder="Patient ID">
+        <input type="text" id="patient-name" placeholder="Patient Name">
+        <input type="text" id="patient-age" placeholder="Patient Age">
+        <input type="text" id="medical-history" placeholder="Medical History">
+        <input type="text" id="prescriptions" placeholder="Prescriptions">
+        <input type="text" id="test-results" placeholder="Test Results">
+        <button onclick="addPatientRecord()">Add Record</button>
+    </div>
+    <div id="search-form">
+        <input type="text" id="search-input" placeholder="Search by ID or Name">
+        <button onclick="searchPatientRecord()">Search</button>
+    </div>
+    <table id="records-table">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Medical History</th>
+            <th>Prescriptions</th>
+            <th>Test Results</th>
+            <th>Action</th>
+        </tr>
+    </table>
+    <button onclick="deletePatientRecords()">Delete All Records</button>
+    <script src="script.js"></script>
+</body>
+</html>
